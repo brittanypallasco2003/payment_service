@@ -1,4 +1,4 @@
-package com.silver_soul.payment_service;
+package com.silversoul.payment;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
