@@ -8,12 +8,6 @@ group = 'com.silver_soul'
 version = '0.0.1-SNAPSHOT'
 description = 'Educational Platform payment system'
 
-java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(25)
-	}
-}
-
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
@@ -40,6 +34,9 @@ dependencies {
 	testImplementation 'io.projectreactor:reactor-test'
 	testImplementation 'org.springframework.kafka:spring-kafka-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation 'org.mapstruct:mapstruct:1.6.3'
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.3'
+	annotationProcessor "org.projectlombok:lombok-mapstruct-binding:0.2.0"
 }
 
 tasks.named('test') {
